@@ -7,3 +7,13 @@
 | + borrowBook()|       | - issueDate    |       | - isAvailable  |
 | + returnBook()|       | - returnDate   |       +----------------+
 +----------------+       +----------------+
+
+IS-A Relationship:
+
+FictionBook extends Book
+ReferenceBook extends Book
+HAS-A Relationship:
+
+Library has Books (One-to-Many)
+User has BorrowedBooks (One-to-Many)
+Transaction has a User & Book (One-to-One)
