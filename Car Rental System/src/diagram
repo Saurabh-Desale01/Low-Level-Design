@@ -1,0 +1,10 @@
++----------------+       +----------------+       +----------------+
+|     User      | 1  ──> |    Booking     | 1  ──> |      Car      |
++----------------+       +----------------+       +----------------+
+| - userId      |       | - bookingId    |       | - carId        |
+| - name        |       | - user (User)  |       | - model        |
+| - bookings[]  |       | - car (Car)    |       | - pricePerDay  |
+| + addBooking()|       | - startDate    |       | - isAvailable  |
++----------------+       | - endDate      |       +----------------+
+                         | - totalAmount  |
+                         +----------------+
