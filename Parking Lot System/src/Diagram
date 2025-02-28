@@ -1,0 +1,19 @@
+IS-A Relationship:
+Car extends Vehicle
+Bike extends Vehicle
+Truck extends Vehicle
+
+
+HAS-A Relationship:
+ParkingLot has ParkingSlots (One-to-Many)
+ParkingSlot has Vehicle (One-to-One)
+Ticket has EntryTime & ExitTime (One-to-One)
+
+
++----------------+       +----------------+       +----------------+
+|   ParkingLot  | 1  ──> |  ParkingSlot  | 1  ──> |   Vehicle     |
++----------------+       +----------------+       +----------------+
+| - slots[]     |       | - slotId       |       | - vehicleNo    |
+| - parkVehicle()|       | - isOccupied   |       | - type         |
+| - removeVehicle()|     | - vehicle      |       +----------------+
++----------------+       +----------------+
