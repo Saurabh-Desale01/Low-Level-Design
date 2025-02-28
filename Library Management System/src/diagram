@@ -1,0 +1,9 @@
++----------------+       +----------------+       +----------------+
+|     User      | 1  ──> |   Transaction  | 1  ──> |     Book      |
++----------------+       +----------------+       +----------------+
+| - userId      |       | - transactionId|       | - bookId       |
+| - name        |       | - user (User)  |       | - title        |
+| - borrowed[]  |       | - book (Book)  |       | - author       |
+| + borrowBook()|       | - issueDate    |       | - isAvailable  |
+| + returnBook()|       | - returnDate   |       +----------------+
++----------------+       +----------------+
